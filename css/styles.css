@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  background-color: rgba(0, 0, 0, 0.048);
+}
+p {
+  initial-letter: bold;
+}
+#divFlex {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#likeButton {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+
+#likeButton:hover {
+  transform: scale(1.5);
+}
+
+.first-letter {
+  font-weight: bold;
+  font-size: larger;
+}
+.image-board__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 7rem;
+  padding: 10px;
+}
+
+.image-board__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+section {
+  border-radius: 5px;
+  border: 2px solid blue;
+  padding: 10px;
+  background-color: azure;
+}
+
+header img {
+  padding: 10px;
+}
+
+.image-board__image--1 {
+  /* Add styles here */
+}
+
+.image-board__image--2 {
+  /* Add styles here */
+}
+
+.image-board__image--3 {
+  /* Add styles here */
+}
+
+.image-board__image--4 {
+  /* Add styles here */
+}
+
+.image-board__image--5 {
+  /* Add styles here */
+}
+
+section:hover {
+  opacity: 0.8;
+}
+
+section p:hover {
+  font-size: large;
+}
+
+#navigation_page {
+  background-color: rgb(248, 144, 7);
+  margin-top: 100px;
+}
+
+#navigation_page ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+#navigation_page ul li {
+  flex: 1 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+#navigation_page ul li a {
+  text-decoration: none;
+  color: rgb(254, 253, 255);
+  font-weight: 1rem;
+}
+
+#navigation_page ul li:hover {
+  background-color: rgba(231, 101, 25, 0.548);
+}
+
+#navigation_page ul li:focus {
+  background-color: rgba(41, 197, 245, 0.548);
+}
+
+#navigation_page ul li a:hover {
+  font-size: large;
+}
+
+#header-event {
+  display: flex;
+  justify-content: space-between;
+
+  text-align: center;
+}
+
+#input-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+input,
+button {
+  padding: 10px;
+  margin: 10px;
+}
