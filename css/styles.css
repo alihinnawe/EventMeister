@@ -125,13 +125,6 @@ section p:hover {
   font-size: large;
 }
 
-#header-event {
-  display: flex;
-  justify-content: space-between;
-
-  text-align: center;
-}
-
 #input-text {
   display: flex;
   align-items: center;
@@ -141,4 +134,27 @@ input,
 button {
   padding: 10px;
   margin: 10px;
+}
+
+#header-event {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+header img {
+  padding: 10px;
+  transition: transform 0.5s;
+  border-radius: 50%S;
+}
+
+header img:active {
+  transform: rotate(360deg);
+}
+
+#header-logo {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  text-decoration: none;
 }
