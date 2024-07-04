@@ -359,3 +359,19 @@ section {
 section:hover {
   background-color: rgba(255, 252, 252, 0.879);
 }
+
+#sectionTags {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+#sectionTags li {
+  display: flex;
+  background-color: lightgray;
+  padding: 5px 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  list-style-type: none;
+  border-radius: 14px;
+}
