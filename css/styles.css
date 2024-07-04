@@ -29,6 +29,30 @@ p {
   transform: scale(1.5);
 }
 
+#bookedButton {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+
+#bookedButton:hover {
+  transform: scale(1.5);
+}
+
+#notbookedButton {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+
+#notbookedButton:hover {
+  transform: scale(1.5);
+}
+
 .first-letter {
   font-weight: bold;
   font-size: larger;
@@ -105,6 +129,23 @@ section p:hover {
   padding: 0;
 }
 
+#mybookingsCentered {
+  display: flex;
+  gap: 30px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#mybookingsCentered a {
+  text-decoration: none;
+  list-style-type: none;
+  color: rgba(127, 130, 131, 0.751);
+  font-family: sans-serif;
+}
+
+#mybookingsCentered a:focus {
+  color: blue;
+}
 #navigation_page ul li {
   flex: 1 0 auto;
   text-align: center;
@@ -159,9 +200,22 @@ section p:hover {
 #header-event {
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
+  padding: 10px;
 }
 
+#header-event button {
+  border: none;
+  background-color: rgb(113, 165, 200);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#header-event button svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
 header img {
   padding: 10px;
   transition: transform 0.5s;
@@ -193,6 +247,7 @@ header img:active {
   color: #f5f6f6;
   border-radius: 10%;
 }
+
 #newEvent img.plus-icon {
   width: 12px;
   height: auto;
@@ -213,10 +268,40 @@ header img:active {
   padding: 10px;
   gap: 10px;
 }
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgb(101, 180, 233);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+button svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+button:focus {
+  outline: none;
+}
 
 header button,
 header input {
-  padding: 10px;
-  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  background-color: rgb(101, 180, 233);
   border: none;
+  padding: 10px;
+  font-size: 21px;
+  cursor: pointer;
+  width: 90px;
+  height: 45px;
+  color: #f5f6f6;
+  border-radius: 10%;
 }
