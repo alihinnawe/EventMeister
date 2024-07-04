@@ -16,6 +16,7 @@ p {
   position: relative;
   justify-content: space-around;
   flex-direction: column;
+  box-shadow: lightgray;
 }
 #footerPadding {
   display: flex;
@@ -76,9 +77,9 @@ p {
 
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  gap: 10rem;
+  gap: 7rem;
   padding: 100px;
-  width: 100%;
+  /* width: 100%; */
   margin: 10px;
 }
 
@@ -88,14 +89,6 @@ p {
   object-fit: cover;
   border-radius: 14px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-
-section {
-  border-radius: 5px;
-  border: 2px solid rgb(171, 171, 177);
-  padding: 10px;
-  background-color: rgb(235, 234, 233);
-  text-align: center;
 }
 
 header img {
@@ -123,17 +116,9 @@ header img {
   /* Add styles here */
 }
 
-section:hover {
-  opacity: 0.8;
-}
-
-section p:hover {
-  font-size: large;
-}
-
 #navigation_page {
   background-color: rgb(101, 180, 233);
-  margin-top: 100px;
+  /* margin-top: 50px; */
 }
 
 #navigation_page ul {
@@ -211,7 +196,7 @@ section p:hover {
   height: 15px;
   width: 15px;
 }
-
+/* 
 #header-event {
   display: flex;
   justify-content: space-between;
@@ -246,8 +231,49 @@ header img:active {
   flex-direction: row;
   padding: 5px;
   text-decoration: none;
+} */
+#header-event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white; /* Ensures the header has a background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
 }
 
+#header-event button {
+  border: none;
+  background-color: rgb(113, 165, 200);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#header-event button svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+header img {
+  padding: 10px;
+  transition: transform 0.5s;
+  border-radius: 30%;
+}
+
+header img:active {
+  transform: rotate(360deg);
+}
+
+#header-logo {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  text-decoration: none;
+}
 #newEvent,
 #formHeader button {
   display: inline-flex;
@@ -319,4 +345,17 @@ header input {
   height: 45px;
   color: #f5f6f6;
   border-radius: 10%;
+}
+
+section {
+  border-radius: 5px;
+  border: 2px solid lightgray;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+section:hover {
+  background-color: rgba(255, 252, 252, 0.879);
 }
