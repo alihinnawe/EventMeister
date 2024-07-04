@@ -26,6 +26,63 @@
     </header>
 
     <hr />
+    <div id="formEventsCategories">
+      <form
+        id="formHeader"
+        action="https://www.w3schools.com/action_page.php"
+        method="get"
+      >
+        <div id="SelectCity">
+          <label for="selectCity">Select City:</label>
+          <select id="selectCity" name="city">
+            <option id="berlin" value="berlin">Berlin</option>
+            <option id="hamburg" value="hamburg">hamburg</option>
+            <option id="munich" value="munich">munich</option>
+            <option id="other" value="other">Select other city</option>
+          </select>
+        </div>
+
+        <div id="SelectEvent">
+          <label for="SelectEvent">Select Event: </label>
+          <select id="SelectEvent" name="event">
+            <option
+              id="networkingEvents"
+              name="networkingEvents"
+              value="networkingEvents"
+            >
+              Networking Events
+            </option>
+            <option
+              id="trainingSeminars"
+              name="trainingSeminars"
+              value="trainingSeminars"
+            >
+              Training seminars
+            </option>
+            <option id="workshops" name="workshops" value="workshops">
+              Workshops
+            </option>
+            <option id="music" name="music" value="music">Music events</option>
+
+            <option id="festivals" name="festivals" value="festivals">
+              Festivals
+            </option>
+
+            <option id="tech" name="tech" value="tech">Tech events</option>
+
+            <option id="others" value="others">Other events</option>
+          </select>
+        </div>
+        <button type="reset">reset</button>
+        <button type="submit">Submit</button>
+      </form>
+
+      <button id="newEvent">
+        <img class="plus-icon" src="./assets/plus-sign.png" alt="Plus Icon" />
+        Event
+      </button>
+    </div>
+
     <main class="image-board__container">
       <section>
         <div id="divFlex">
@@ -117,7 +174,7 @@
           </a>
           <img
             id="likeButton"
-            src="./assets/like-button.svg"
+            20px;="./assets/like-button.svg"
             width="20px"
             alt="like button"
           />
@@ -187,10 +244,6 @@
           </p>
         </div>
       </section>
-      <button id="newEvent">
-        <img class="plus-icon" src="./assets/plus-sign.svg" alt="Plus Icon" />
-        Event
-      </button>
     </main>
     <footer>
       <nav id="navigation_page">

@@ -36,10 +36,13 @@ p {
 }
 .image-board__container {
   display: grid;
+
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  gap: 7rem;
-  padding: 10px;
+  gap: 10rem;
+  padding: 100px;
+  width: 100%;
+  margin: 10px;
 }
 
 .image-board__image {
@@ -145,7 +148,7 @@ button {
 header img {
   padding: 10px;
   transition: transform 0.5s;
-  border-radius: 50%S;
+  border-radius: 30%;
 }
 
 header img:active {
@@ -159,18 +162,49 @@ header img:active {
   text-decoration: none;
 }
 
-#newEvent {
+#newEvent,
+#formHeader button {
   display: inline-flex;
   align-items: center;
   background-color: #1693ec;
   border: none;
   padding: 10px;
-  font-size: 16px;
+  font-size: 21px;
   cursor: pointer;
   max-width: fit-content;
+  height: 60px;
+  color: #f5f6f6;
+  border-radius: 10%;
 }
 #newEvent img.plus-icon {
-  width: 15px;
+  width: 12px;
   height: auto;
   margin-right: 8px;
 }
+
+#formEventsCategories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#formHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+/* #formHeader button {
+  background-color: #1693ec;
+  border: none;
+  padding: 10px;
+  font-size: 21px;
+  cursor: pointer;
+  max-width: fit-content;
+  height: 60px;
+  color: #f5f6f6;
+  border-radius: 10%;
+} */
