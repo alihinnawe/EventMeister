@@ -19,14 +19,22 @@
         />
         <h1>Berliner Events</h1>
       </a>
-      <div id="input-text">
-        <input type="text" name="headerInput" value="input" /> <br />
-        <button>Search event</button>
-      </div>
     </header>
 
     <hr />
     <div id="formEventsCategories">
+      <div id="input-text">
+        <input
+          type="text"
+          name="headerInput"
+          value=""
+          placeholder="Search for event"
+        />
+        <br />
+        <button>
+          <img src="./assets/search-icon.jpg" alt="Search" />
+        </button>
+      </div>
       <form
         id="formHeader"
         action="https://www.w3schools.com/action_page.php"
@@ -42,9 +50,9 @@
           </select>
         </div>
 
-        <div id="SelectEvent">
-          <label for="SelectEvent">Select Event: </label>
-          <select id="SelectEvent" name="event">
+        <div id="selectEvent">
+          <label for="selectEvent">Select Event: </label>
+          <select id="selectEvent" name="event">
             <option
               id="networkingEvents"
               name="networkingEvents"
