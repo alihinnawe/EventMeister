@@ -196,55 +196,19 @@ header img {
   height: 15px;
   width: 15px;
 }
-/* 
+
 #header-event {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-}
-
-#header-event button {
-  border: none;
-  background-color: rgb(113, 165, 200);
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#header-event button svg {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-header img {
-  padding: 10px;
-  transition: transform 0.5s;
-  border-radius: 30%;
-}
-
-header img:active {
-  transform: rotate(360deg);
-}
-
-#header-logo {
-  display: flex;
-  flex-direction: row;
-  padding: 5px;
-  text-decoration: none;
-} */
-#header-event {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+  /* padding: -15px; */
   z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white; /* Ensures the header has a background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 #header-event button {
   border: none;
   background-color: rgb(113, 165, 200);
@@ -299,7 +263,7 @@ header img:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding-top: 130px;
 }
 
 #formHeader {
@@ -357,7 +321,7 @@ section {
 }
 
 section:hover {
-  background-color: rgba(255, 252, 252, 0.879);
+  background-color: lightgray;
 }
 
 #sectionTags {
@@ -374,4 +338,46 @@ section:hover {
   text-decoration: none;
   list-style-type: none;
   border-radius: 14px;
+}
+
+#headerButton {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#headerButton button {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid aqua;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  background-color: chocolate;
+  border-radius: 50%;
+}
+
+#divHeaderButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#divHeaderButton a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#divHeaderButton button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
