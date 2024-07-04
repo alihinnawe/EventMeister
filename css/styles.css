@@ -34,6 +34,7 @@ p {
   font-weight: bold;
   font-size: larger;
 }
+
 .image-board__container {
   display: grid;
 
@@ -46,8 +47,8 @@ p {
 }
 
 .image-board__image {
-  width: 100%;
   height: auto;
+  width: 70%;
   object-fit: cover;
   border-radius: 14px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -55,9 +56,10 @@ p {
 
 section {
   border-radius: 5px;
-  border: 2px solid blue;
+  border: 2px solid rgb(171, 171, 177);
   padding: 10px;
-  background-color: azure;
+  background-color: rgb(235, 234, 233);
+  text-align: center;
 }
 
 header img {
@@ -93,7 +95,7 @@ section p:hover {
 }
 
 #navigation_page {
-  background-color: rgb(248, 144, 7);
+  background-color: rgb(101, 180, 233);
   margin-top: 100px;
 }
 
@@ -117,11 +119,12 @@ section p:hover {
 }
 
 #navigation_page ul li:hover {
-  background-color: rgba(231, 101, 25, 0.548);
+  background-color: rgba(34, 146, 181, 0.548);
 }
 
-#navigation_page ul li:focus {
-  background-color: rgba(41, 197, 245, 0.548);
+#navigation_page ul li:focus,
+#navigation_page ul li:visited {
+  background-color: rgba(17, 27, 212, 0.548);
 }
 
 #navigation_page ul li a:hover {
@@ -166,7 +169,7 @@ header img:active {
 #formHeader button {
   display: inline-flex;
   align-items: center;
-  background-color: #1693ec;
+  background-color: rgb(101, 180, 233);
   border: none;
   padding: 10px;
   font-size: 21px;
@@ -197,14 +200,7 @@ header img:active {
   gap: 10px;
 }
 
-/* #formHeader button {
-  background-color: #1693ec;
-  border: none;
-  padding: 10px;
-  font-size: 21px;
-  cursor: pointer;
-  max-width: fit-content;
-  height: 60px;
-  color: #f5f6f6;
-  border-radius: 10%;
-} */
+#input-text {
+  background-color: rgba(236, 239, 239, 0.26);
+  border-radius: 15px;
+}
