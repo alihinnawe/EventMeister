@@ -17,6 +17,19 @@ p {
   justify-content: space-around;
   flex-direction: column;
 }
+#footerPadding {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+}
+
+#divFlex1 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 #likeButton {
   display: flex;
   position: absolute;
@@ -90,7 +103,8 @@ header img {
 }
 
 .image-board__image--1 {
-  /* Add styles here */
+  max-width: fit-content;
+  height: 100%;
 }
 
 .image-board__image--2 {
@@ -136,7 +150,8 @@ section p:hover {
   list-style-type: none;
 }
 
-#mybookingsCentered a {
+#mybookingsCentered a,
+#bookingsFestival {
   text-decoration: none;
   list-style-type: none;
   color: rgba(127, 130, 131, 0.751);
