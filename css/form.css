@@ -5,10 +5,14 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #f0f0f0;
+  background-image: "";
+  background-image: url("../assets/login-events.jpg");
+  background-size: cover;
+  background-position: center;
 }
 form {
-  width: 500px;
-  height: 350px;
+  width: 600px;
+  height: 450px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -32,4 +36,10 @@ input {
 button {
   align-self: flex-end;
   padding: 10px 20px;
+}
+
+#passwordForget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

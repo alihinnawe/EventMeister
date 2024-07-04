@@ -10,21 +10,36 @@
     <form action="login.html" method="get">
       <div>
         <fieldset>
-          <legend>Login Paage</legend>
+          <legend>Login Page</legend>
 
           <div id="username">
             <label for="username">Username:</label>
-            <input id="username" type="text" value="username" />
+            <input
+              id="username"
+              type="text"
+              value=""
+              placeholder="Enter your username"
+              required
+            />
           </div>
 
           <div>
             <label for="password">Password:</label>
-            <input id="password" type="password" value="password" />
+            <input
+              id="password"
+              type="password"
+              value="password"
+              placeholder="Enter your password"
+              required
+            />
           </div>
-
-          <button type="submit">Login</button>
+          <div id="passwordForget">
+            <button type="submit">Login</button>
+            <a href="#">forget password?</a>
+          </div>
         </fieldset>
       </div>
+      <p>copyrights FiGD Academy 2024</p>
     </form>
   </body>
 </html>
