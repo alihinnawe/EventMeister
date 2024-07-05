@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  padding: 1rem;
   font-family: system-ui;
 }
 p {
@@ -74,8 +75,8 @@ p {
 
 .image-board__container {
   display: grid;
-
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   grid-template-rows: auto;
   gap: 7rem;
   padding: 100px;
@@ -199,13 +200,13 @@ header img {
 
 #header-event {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   /* padding: -15px; */
   z-index: 1;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: calc(100% - 2rem);
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -261,7 +262,7 @@ header img:active {
 
 #formEventsCategories {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-top: 130px;
 }
